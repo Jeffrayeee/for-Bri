@@ -10,7 +10,7 @@ var app = express();
 var port = process.env.PORT || 8080;
 var key = process.env.KEY;
 var maximumRank = 255;
-var COOKIE = 'cookie here'
+var LOGINCOOKIE = 'cookie here'
 
 app.set('env', 'production');
 
@@ -488,7 +488,7 @@ app.use(function (err, req, res, next) {
 });
 
 function login () {
-  return rbx.setCookie(COOKIE);
+  return rbx.setCookie(LOGINCOOKIE);
 }
 
 setInterval(login, 86400000);
