@@ -8,7 +8,7 @@ var Promise = require('bluebird');
 
 var app = express();
 var port = process.env.PORT || 8080;
-var key = process.env.KEY;
+var key = 'urfat122'
 var maximumRank = 255;
 var LOGINCOOKIE = 'cookie here'
 
